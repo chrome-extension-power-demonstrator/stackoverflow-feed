@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link href="css/extention_style.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script src="js/variable.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+    <div id="debug"></div><br>
+    <table id="table_input" class="fill_parent">
+        <tr>
+            <td class="td_right" width="20%">
+                <span class="span_label">Stackflow Users:</span>
+            </td>
+            <td class="td_middle" width="60%">
+                <select id="select_user_name" class="fill_parent">
+                </select>
+            </td>
+            <td class="td_left">
+                <a class="button" id="button_add_new_user">add</a>
+                <a class="button" style="margin-left: 10px;" id="button_remove_current_user">remove</a>
+            </td>
+        </tr>
+        <tr id="tr_add_user">
+            <td class="td_right">
+                <span class="span_label">User ID:</span>
+            </td>
+            <td class="td_middle">
+                <input type="text" class="fill_parent" id="input_text_additional_user_id" placeholder="Please type the user id you'd like to add here..." value="">
+            </td>
+            <td class="td_left">
+                <a class="button" id="button_confirm_to_add_user">confirm</a>
+                <a class="button" style="margin-left: 10px;" id="button_cancel_to_add_user">cancel</a>
+            </td>
+        </tr>
+        <tr id="tr_remove_user">
+            <td class="td_right">
+            </td>
+            <td align="center">
+                <span class="span_label" id="span_confirm_remove_user"></span><br>
+                <input type="button" value="Yes" id="input_button_confirm_remove_user">
+                <input type="button" value="No" id="input_button_no_remove_user">
+            </td>
+            <td class="td_left">
+            </td>
+        </tr>
+        <tr>
+            <td class="td_right">
+                <span class="span_label">Subjects:</span>
+            </td>
+            <td class="td_middle">
+                <select id="select_subject" class="fill_parent" size="5">
+                </select>
+            </td>
+            <td class="td_left">
+                <a class="button" id="button_refull_current_user">re-full</a>
+                <a class="button" style="margin-left: 10px;" id="button_delete_current_subject">delete</a>
+            </td>
+        </tr>
+        <tr id="tr_delete_subject">
+            <td class="td_right">
+            </td>
+            <td align="center">
+                <span class="span_label" id="span_confirm_delete_subject"></span><br>
+                <input type="button" value="Yes" id="input_button_confirm_delete_subject">
+                <input type="button" value="No" id="input_button_no_delete_subject">
+            </td>
+            <td class="td_left">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table id="table_output" class="fill_parent">
+        <tr>
+            <td width="10%" class="td_right">
+                <span class="span_result_label">From:</span>
+            </td>
+            <td class="td_middle" width="60%">
+                <span class="span_result_content span_special_label" id="span_from"></span>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" class="td_right">
+                <span class="span_result_label">Subject:</span>
+            </td>
+            <td class="td_middle">
+                <span class="span_result_content span_special_label" id="span_subject"></span>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" class="td_right">
+                <span class="span_result_label">Website:</span>
+            </td>
+            <td class="td_middle">
+                <a class="span_result_content" target="_blank" id="link_website" href="#"></a>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" class="td_right">
+                <span class="span_result_label">When:</span>
+            </td>
+            <td class="td_middle">
+                <span class="span_result_content span_special_label" id="span_when"></span>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" class="td_right">
+                <span class="span_result_label">Summary:</span>
+            </td>
+            <td class="td_middle">
+                <div class="span_result_content" id="summary">
+                </div>
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>

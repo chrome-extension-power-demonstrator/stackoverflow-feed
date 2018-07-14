@@ -1,0 +1,13 @@
+{
+  "name" : "Stackflow User Activities",
+  "version" : "1.0.0",
+  "description" : "This extension makes enable for users to catch all stackflow user's activities. You can simply add their user id and then can watch their comments in real time.",
+  "permissions": [ "cookies","<all_urls>"],
+  "browser_action": {
+    "default_icon": "image/icon.png",
+    "default_popup":"popup.html"
+  },
+  "icons": { "128": "image/icon.png" },
+  "manifest_version": 2,
+  "background": { "scripts": ["js/background.js"] }
+}

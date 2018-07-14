@@ -1,0 +1,120 @@
+html{
+    width: 500px;
+    height: 819px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom : 20px;
+    margin: 0;
+}
+
+td{
+    vertical-align: top;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button{
+    text-decoration: underline;
+}
+
+#tr_add_user, #tr_remove_user, #tr_delete_subject{
+    display: none;
+}
+
+input[type="button"]{
+    margin:5px 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.fill_parent{
+    width: 100%;
+/*    height: 100%;    */
+}
+
+.td_middle{
+    text-align: left;
+}
+
+.td_left{
+    text-align: left;
+}
+
+.td_right{
+    text-align: right;
+}
+
+.info_label{
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    color: #555;
+}
+
+.positive_button{
+    margin: 15px 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(80, 130, 190);
+    border-color: rgb(126, 129, 132);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.positive_button:hover{
+    opacity: 1;
+}
+
+.info_field{
+    border-radius: 5px;
+    text-align: center;
+}
+
+#debug{
+    margin-top: 15px;
+    text-align: center;
+    color: darkred;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial;
+    width: 100%;
+}
+
+#summary {
+    text-indent: 5px;
+    word-wrap: break-word;
+    width:400px;
+}
+
+#table_output{
+    color: #555;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 1px;
+    border-color: gray;
+}
+
+.span_special_label{
+    font-weight: bold;
+}
+
+#select_subject{
+    color: #ccc;   
+}
+
+.option_not_viewed{
+    color:#000;
+}
+
+#table_output{
+    display: none;
+}
